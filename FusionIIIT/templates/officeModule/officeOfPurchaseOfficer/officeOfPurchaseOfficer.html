@@ -244,16 +244,14 @@
             $("#loader").addClass("disabled");
         }
 
-
-
         function quantityInputOnChange(val){
             var quantityInput = document.getElementById("quantityInput");
-            var lpcFields = document.getElementById("lpcFields");
+            var lpc_fields = document.getElementById("lpc_fields");
             //console.log(val);
             if (val >= 25000 && val < 250000)
-               lpcFields.style.display = 'block';
+               lpc_fields.style.display = 'block';
             else
-               lpcFields.style.display = 'none';
+               lpc_fields.style.display = 'none';
         };
     </script>
     <script>
