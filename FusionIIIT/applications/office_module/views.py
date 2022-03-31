@@ -2541,10 +2541,11 @@ def officeOfDeanAcademics(request):
     deslist1=['Director']
 
 
-    if user.user_type == 'faculty': 
-        return render(request, "officeModule/officeOfDeanAcademics/officeOfDeanAcademics.html", context)
-    else:
-        return render(request, "officeModule/directorOffice/unauthorised.html", context)
+    # if user.user_type == 'faculty': 
+    return render(request, "officeModule/officeOfDeanAcademics/officeOfDeanAcademics.html", context)
+    # else:
+        # return render(request, "officeModule/directorOffice/unauthorised.html", context)
+        
 def assistantship(request):
     # print(request.POST.getlist('check'))
     ob=Assistantship.objects.all()

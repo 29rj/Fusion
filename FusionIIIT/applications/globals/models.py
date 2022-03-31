@@ -115,6 +115,7 @@ class ExtraInfo(models.Model):
         null=True, blank=True, upload_to='globals/profile_pictures')
     about_me = models.TextField(default='NA', max_length=1000, blank=True)
 
+    
     @property
     def age(self):
         timedelta = timezone.now().date() - self.date_of_birth
